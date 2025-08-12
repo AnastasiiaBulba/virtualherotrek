@@ -257,15 +257,15 @@ Content is managed through:
 
 ## 📄 License
 
-This project is proprietary software. All rights reserved by Virtualherotrek.com.
+This project is proprietary software. All rights reserved by Playuniversemasters.com.
 
 ## 📞 Support
 
 For technical support or questions:
 
-- **Email**: contact@virtualherotrek.com
+- **Email**: contact@playuniversemasters.com
 - **Phone**: +44 77 151 1234
-- **Address**: 221B Baker Street, London NW1 6XE, United Kingdom
+- **Address**: 450 Broadway, Winnipeg, MB R3C 0V8, Canada
 
 ## 🔄 Updates
 
@@ -275,4 +275,4 @@ For technical support or questions:
 
 ---
 
-**Note**: This website is designed specifically for Princess Run 3D and Virtualherotrek.com. All content, images, and branding are property of Virtualherotrek.com.
+**Note**: This website is designed specifically for Princess Run 3D and Playuniversemasters.com. All content, images, and branding are property of Playuniversemasters.com.

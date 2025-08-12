@@ -495,7 +495,7 @@ class PageBuilder {
                             <div class="contact-info">
                                 <div class="contact-item">
                                     <span class="contact-icon">📧</span>
-                                    <span>contact@virtualherotrek.com</span>
+                                    <span>contact@playuniversemasters.com</span>
                                 </div>
                                 <div class="contact-item">
                                     <span class="contact-icon">📞</span>
@@ -505,7 +505,7 @@ class PageBuilder {
                         </div>
                     </div>
                     <div class="footer-bottom">
-                        <p>&copy; ${new Date().getFullYear()} <a href="https://virtualherotrek.com">Virtualherotrek.com</a>. All rights reserved.</p>
+                        <p>&copy; ${new Date().getFullYear()} <a href="https://playuniversemasters.com">Playuniversemasters.com</a>. All rights reserved.</p>
                     </div>
                 </div>
             </footer>
