@@ -1,0 +1,222 @@
+.how-to-play {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 80px 0;
+}
+
+.how-to-play-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.how-to-play-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.instruction-card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 35px;
+  box-shadow: 0 5px 25px rgba(255, 105, 180, 0.1);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.instruction-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 50px 0;
+  border-color: transparent var(--primary-color) transparent transparent;
+  opacity: 0.1;
+  transition: var(--transition);
+}
+
+.instruction-card:hover::after {
+  opacity: 0.3;
+}
+
+.instruction-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(255, 105, 180, 0.2);
+}
+
+.instruction-number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: var(--gradient-primary);
+  color: var(--white);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+}
+
+.instruction-title {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.instruction-description {
+  color: var(--light-text);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.instruction-tips {
+  background: linear-gradient(135deg, #fff5f8, #ffeef7);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.instruction-tips h5 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.instruction-tips ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.instruction-tips li {
+  padding: 5px 0;
+  color: var(--light-text);
+  position: relative;
+  padding-left: 20px;
+}
+
+.instruction-tips li::before {
+  content: "💡";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+.controls-section {
+  margin-top: 50px;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 40px;
+  box-shadow: 0 5px 25px rgba(255, 105, 180, 0.1);
+}
+
+.controls-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.control-item {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #fff5f8, #ffeef7);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: var(--transition);
+}
+
+.control-item:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.control-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.control-name {
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.control-description {
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+  .how-to-play {
+    padding: 60px 0;
+  }
+
+  .how-to-play-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .instruction-card {
+    padding: 25px;
+  }
+
+  .controls-section {
+    padding: 30px 20px;
+    margin-top: 40px;
+  }
+
+  .controls-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .how-to-play {
+    padding: 40px 0;
+  }
+
+  .how-to-play-grid {
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  .instruction-card {
+    padding: 20px;
+  }
+
+  .instruction-number {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .instruction-title {
+    font-size: 1.2rem;
+  }
+
+  .controls-section {
+    padding: 25px 15px;
+    margin-top: 30px;
+  }
+
+  .controls-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

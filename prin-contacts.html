@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtualherotrek.com - Contacts</title>
+    <meta
+      name="description"
+      content="Get in touch with the Princess Run 3D team. Contact us for support, feedback, or business inquiries."
+    />
+    <meta
+      name="keywords"
+      content="Princess Run 3D, contact, support, feedback"
+    />
+    <link rel="icon" type="image/x-icon" href="pict/princess512.jpg" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main>
+      <section class="contacts-hero">
+        <div class="container">
+          <h1 class="section-title">Contact Us</h1>
+          <p class="section-subtitle">
+            Get in touch with our team for support, feedback, or business
+            inquiries
+          </p>
+        </div>
+      </section>
+
+      <section class="map-section">
+        <div class="container">
+          <h2>Find Us</h2>
+          <div class="map-container">
+            <!-- Responsive map iframe (Google Maps, UI + tips in English) -->
+            <div
+              style="
+                max-width: 100%;
+                height: 0;
+                padding-bottom: 56%;
+                position: relative;
+              "
+            >
+              <iframe
+                title="Map — 221B Baker Street, London"
+                src="https://www.google.com/maps?q=221B%20Baker%20Street%2C%20London%20NW1%206XE%2C%20United%20Kingdom&hl=en&z=17&output=embed"
+                style="
+                  border: 0;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts-section">
+        <div class="container">
+          <div class="contacts-content">
+            <div class="contact-form-section">
+              <h2>Send us a Message</h2>
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" required />
+                  <span class="error-message" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required />
+                  <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" />
+                  <span class="error-message" id="phone-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject *</label>
+                  <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="feedback">Game Feedback</option>
+                    <option value="business">Business Partnership</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span class="error-message" id="subject-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Tell us how we can help you..."
+                  ></textarea>
+                  <span class="error-message" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+              </form>
+            </div>
+
+            <div class="contact-info-section">
+              <h2>Get in Touch</h2>
+              <p>
+                We'd love to hear from you! Whether you have a question about
+                Princess Run 3D, need technical support, or want to share your
+                feedback, our team is here to help.
+              </p>
+
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <div class="contact-icon">📧</div>
+                  <div class="contact-details">
+                    <h3>Email</h3>
+                    <p>contact@virtualherotrek.com</p>
+                    <span>We'll respond within 24 hours</span>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="contact-icon">📞</div>
+                  <div class="contact-details">
+                    <h3>Phone</h3>
+                    <p>+44 77 151 1234</p>
+                    <span>Monday - Friday, 9:00 AM - 6:00 PM GMT</span>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="contact-icon">📍</div>
+                  <div class="contact-details">
+                    <h3>Address</h3>
+                    <p>
+                      221B Baker Street<br />London NW1 6XE<br />United Kingdom
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/builder.js"></script>
+    <script src="js/contacts.js"></script>
+  </body>
+</html>

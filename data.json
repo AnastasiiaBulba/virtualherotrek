@@ -1,0 +1,261 @@
+{
+  "site": {
+    "title": "Virtualherotrek.com - Princess Run 3D",
+    "description": "Want a magical and exciting running adventure? Step into Princess Run 3D, a fun 3D platform arcade game full of exciting challenges. Play as a fearless princess racing through colorful 3D worlds. Collect beautiful clothes, shoes, hair, etc. Increase your charisma to get a maid of honor. Theyre going to help you fend off enemies in front of you or dirty mud, rain, etc. Be careful to avoid ugly clothes, costumes, bad weather, etc",
+    "keywords": "3D Games, Princess, running",
+    "domain": "virtualherotrek.com"
+  },
+  "game": {
+    "name": "Princess Run 3D",
+    "iframe_url": "https://html5.gamemonetize.co/gwe3ok9bdz6cx8n0t26rs26qr6rxb0kx/",
+    "original_url": "https://gamemonetize.com/princess-run-3d-game"
+  },
+  "contact": {
+    "email": "contact@virtualherotrek.com",
+    "phone": "+44 77 151 1234",
+    "address": "221B Baker Street, London NW1 6XE, United Kingdom"
+  },
+  "hero": {
+    "title": "Princess Run 3D",
+    "subtitle": "Embark on a Magical Running Adventure",
+    "description": "Step into a world of enchantment where you'll race through colorful 3D worlds as a fearless princess. Collect beautiful clothes, shoes, and accessories while avoiding obstacles and enemies. Increase your charisma to gain loyal companions who will help you on your journey."
+  },
+  "features": [
+    {
+      "icon": "🎨",
+      "title": "Stunning 3D Graphics",
+      "description": "Immerse yourself in beautifully rendered 3D worlds with vibrant colors and smooth animations.",
+      "image": "pict/princess-section1.jpg",
+      "items": [
+        "High-quality textures and models",
+        "Smooth 60 FPS gameplay",
+        "Dynamic lighting effects"
+      ]
+    },
+    {
+      "icon": "👑",
+      "title": "Character Customization",
+      "description": "Personalize your princess with beautiful clothes, shoes, hair styles, and accessories.",
+      "items": [
+        "Hundreds of customization items",
+        "Unique character combinations",
+        "Special event costumes"
+      ]
+    },
+    {
+      "icon": "🌟",
+      "title": "Companion System",
+      "description": "Increase your charisma to gain loyal companions who will help you overcome challenges.",
+      "items": [
+        "Strategic companion selection",
+        "Special abilities and powers",
+        "Bonding mechanics"
+      ]
+    },
+    {
+      "icon": "🏃‍♀️",
+      "title": "Dynamic Gameplay",
+      "description": "Experience varied challenges including weather changes, enemy encounters, and environmental obstacles.",
+      "items": [
+        "Multiple difficulty levels",
+        "Random events and surprises",
+        "Skill-based progression"
+      ]
+    }
+  ],
+  "how_to_play": [
+    {
+      "number": 1,
+      "title": "Basic Movement",
+      "description": "Use the arrow keys or WASD to move your princess left, right, forward, and backward. The spacebar allows you to jump over obstacles and reach higher platforms.",
+      "tips": [
+        "Practice smooth movement transitions",
+        "Use short taps for precise positioning",
+        "Combine movement with jumping for advanced maneuvers"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Collecting Items",
+      "description": "Gather beautiful clothes, shoes, hair accessories, and other fashion items to increase your charisma. Each item contributes to your overall score and unlocks new possibilities.",
+      "tips": [
+        "Prioritize rare and valuable items",
+        "Create matching outfit combinations",
+        "Save special items for difficult levels"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Avoiding Obstacles",
+      "description": "Stay away from ugly clothes, bad weather conditions, mud, rain, and other obstacles that can slow you down or reduce your charisma points.",
+      "tips": [
+        "Watch for visual cues and patterns",
+        "Use companions to help clear obstacles",
+        "Plan your route in advance"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Companion System",
+      "description": "As your charisma increases, you'll gain loyal companions who can help you overcome challenges, clear obstacles, and provide special abilities.",
+      "tips": [
+        "Choose companions based on level requirements",
+        "Use companion abilities strategically",
+        "Build strong relationships with your team"
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "icon": "⬅️➡️",
+      "name": "Movement",
+      "description": "Arrow keys or WASD"
+    },
+    {
+      "icon": "⬆️",
+      "name": "Jump",
+      "description": "Spacebar"
+    },
+    {
+      "icon": "🎯",
+      "name": "Action",
+      "description": "Enter or Click"
+    },
+    {
+      "icon": "⏸️",
+      "name": "Pause",
+      "description": "ESC or P"
+    }
+  ],
+  "game_worlds": [
+    {
+      "icon": "🌸",
+      "name": "Flower Garden",
+      "description": "A serene starting area perfect for beginners, filled with beautiful flowers and gentle slopes."
+    },
+    {
+      "icon": "🏰",
+      "name": "Royal Palace",
+      "description": "Navigate through grand halls and royal chambers while collecting precious royal attire."
+    },
+    {
+      "icon": "🌲",
+      "name": "Enchanted Forest",
+      "description": "Dense woodland with hidden paths and magical creatures that can help or hinder your progress."
+    },
+    {
+      "icon": "💎",
+      "name": "Crystal Caves",
+      "description": "Challenging underground passages with crystal formations and rare gemstone accessories."
+    }
+  ],
+  "stats": {
+    "worlds": 8,
+    "levels": "50+",
+    "items": "100+"
+  },
+  "reviews": [
+    {
+      "name": "Princess Emma",
+      "rating": 5,
+      "text": "Absolutely love this game! The 3D graphics are stunning and the character customization is amazing. I've spent hours creating different outfits and exploring all the worlds.",
+      "date": "December 15, 2024"
+    },
+    {
+      "name": "Gaming Queen",
+      "rating": 5,
+      "text": "The companion system is brilliant! Having loyal friends help me through difficult levels makes the game so much more engaging. Highly recommend for all ages!",
+      "date": "December 12, 2024"
+    },
+    {
+      "name": "Adventure Lover",
+      "rating": 5,
+      "text": "Perfect balance of challenge and fun! The different worlds keep me coming back, and the collection aspect is addictive. Great game for casual and hardcore gamers alike.",
+      "date": "December 10, 2024"
+    },
+    {
+      "name": "Fashion Forward",
+      "rating": 5,
+      "text": "As someone who loves fashion, this game is a dream come true! The variety of clothing items and accessories is incredible. I love mixing and matching different styles.",
+      "date": "December 8, 2024"
+    },
+    {
+      "name": "Platform Pro",
+      "rating": 5,
+      "text": "The platforming mechanics are solid and responsive. Controls feel natural and the level design is clever. This is how 3D platformers should be done!",
+      "date": "December 5, 2024"
+    },
+    {
+      "name": "Family Gamer",
+      "rating": 5,
+      "text": "Perfect for family game time! My kids love the colorful graphics and simple controls, while I enjoy the strategic elements. A game that truly brings everyone together.",
+      "date": "December 3, 2024"
+    }
+  ],
+  "review_stats": {
+    "average_rating": 4.9,
+    "active_players": "10K+",
+    "games_played": "50K+"
+  },
+  "news": {
+    "updates": [
+      {
+        "title": "New Level Pack Released",
+        "excerpt": "Explore the mysterious Crystal Caves with our latest level pack featuring 10 new challenging levels, unique obstacles, and rare gemstone accessories.",
+        "date": "March 20, 2025"
+      },
+      {
+        "title": "Performance Improvements",
+        "excerpt": "We've optimized the game engine for smoother gameplay on all devices. Experience improved frame rates and reduced loading times across all platforms.",
+        "date": "March 18, 2025"
+      },
+      {
+        "title": "New Princess Outfits",
+        "excerpt": "Unlock 15 new exclusive princess outfits and accessories in our latest fashion update. Each outfit comes with unique bonuses and special effects.",
+        "date": "March 15, 2025"
+      },
+      {
+        "title": "Companion System Update",
+        "excerpt": "Introducing new companion abilities and bonding mechanics. Your loyal friends now have enhanced powers and can learn new skills as you progress.",
+        "date": "March 12, 2025"
+      },
+      {
+        "title": "Weather System Enhancement",
+        "excerpt": "Dynamic weather effects now affect gameplay in exciting ways. Rain, snow, and storms create new challenges and opportunities for strategic play.",
+        "date": "March 10, 2025"
+      }
+    ],
+    "diaries": [
+      {
+        "title": "A Princess's Journey Through the Enchanted Forest",
+        "excerpt": "Follow Princess Luna as she discovers hidden paths and magical creatures in the mysterious Enchanted Forest. Learn about the secrets that await brave adventurers.",
+        "date": "July 16, 2025",
+        "image": "pict/princess-new1.jpg"
+      },
+      {
+        "title": "Inside the Royal Palace: A Guide to Luxury",
+        "excerpt": "Take a virtual tour of the magnificent Royal Palace and discover the most valuable fashion items and royal accessories hidden within its grand halls.",
+        "date": "July 14, 2025",
+        "image": "pict/princess-new2.jpg"
+      },
+      {
+        "title": "Secrets of the Crystal Caves",
+        "excerpt": "Delve deep into the mysterious Crystal Caves where ancient magic still lingers. Discover the hidden treasures and face the guardians that protect them.",
+        "date": "July 12, 2025",
+        "image": "pict/princess-new1.jpg"
+      },
+      {
+        "title": "The Flower Garden Chronicles",
+        "excerpt": "Experience the beauty and tranquility of the Flower Garden, where every blossom holds a story and every path leads to new discoveries.",
+        "date": "July 10, 2025",
+        "image": "pict/princess-new2.jpg"
+      },
+      {
+        "title": "Adventures in the Floating Islands",
+        "excerpt": "Soar through the clouds and explore the mysterious Floating Islands, where gravity works differently and new challenges await brave princesses.",
+        "date": "July 8, 2025",
+        "image": "pict/princess-new1.jpg"
+      }
+    ]
+  }
+}
