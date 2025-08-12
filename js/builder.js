@@ -499,7 +499,7 @@ class PageBuilder {
                                 </div>
                                 <div class="contact-item">
                                     <span class="contact-icon">📞</span>
-                                    <span>+44 77 151 1234</span>
+                                    <span>+1 (204) 555-0123</span>
                                 </div>
                             </div>
                         </div>

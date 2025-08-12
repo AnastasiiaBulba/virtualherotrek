@@ -264,7 +264,7 @@ This project is proprietary software. All rights reserved by Playuniversemasters
 For technical support or questions:
 
 - **Email**: contact@playuniversemasters.com
-- **Phone**: +44 77 151 1234
+- **Phone**: +1 (204) 555-0123
 - **Address**: 450 Broadway, Winnipeg, MB R3C 0V8, Canada
 
 ## 🔄 Updates
