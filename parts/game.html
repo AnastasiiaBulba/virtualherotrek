@@ -6,14 +6,31 @@
     </p>
 
     <div class="game-frame-container">
-      <div class="game-frame">
+      <!-- Game iframe (always visible but muted initially) -->
+      <div id="game-frame" class="game-frame">
         <iframe
+          id="game-iframe"
           src="https://html5.gamemonetize.co/gwe3ok9bdz6cx8n0t26rs26qr6rxb0kx/"
           scrolling="none"
           frameborder="0"
           allowfullscreen
+          allow="autoplay; encrypted-media"
+          muted
         >
         </iframe>
+      </div>
+
+      <!-- Play button overlay (positioned on top of iframe) -->
+      <div id="play-button-overlay" class="play-button-overlay">
+        <div class="play-button-content">
+          <button id="play-game-btn" class="play-game-btn">
+            <span class="play-icon">▶️</span>
+            <span class="play-text">Play Game</span>
+          </button>
+          <p class="play-description">
+            Click to enable sound and start playing
+          </p>
+        </div>
       </div>
     </div>
 

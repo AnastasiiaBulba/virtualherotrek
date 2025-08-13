@@ -72,6 +72,11 @@ class PageBuilder {
         if (response.ok) {
           const gameHtml = await response.text();
           gamePlaceholder.innerHTML = gameHtml;
+
+          // Initialize game play button after game HTML is loaded
+          setTimeout(() => {
+            this.initGamePlayButton();
+          }, 100);
         } else {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -297,6 +302,38 @@ class PageBuilder {
     const yearElement = document.getElementById("current-year");
     if (yearElement) {
       yearElement.textContent = new Date().getFullYear();
+    }
+  }
+
+  // Initialize game play button functionality
+  initGamePlayButton() {
+    const playBtn = document.getElementById("play-game-btn");
+    const playOverlay = document.getElementById("play-button-overlay");
+    const gameIframe = document.getElementById("game-iframe");
+
+    if (playBtn && playOverlay && gameIframe) {
+      console.log("Game play button initialized successfully");
+
+      playBtn.addEventListener("click", function () {
+        console.log("Play button clicked!");
+
+        // Hide play button overlay with smooth transition
+        playOverlay.classList.add("hidden");
+
+        // Remove muted attribute to enable sound
+        gameIframe.removeAttribute("muted");
+
+        // Focus on the iframe for better user experience
+        gameIframe.focus();
+
+        console.log("Game started with sound enabled");
+      });
+    } else {
+      console.error("Game play button elements not found:", {
+        playBtn: !!playBtn,
+        playOverlay: !!playOverlay,
+        gameIframe: !!gameIframe,
+      });
     }
   }
 
