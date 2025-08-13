@@ -209,16 +209,16 @@ function simulateFormSubmission(formData) {
 
 function showSuccessMessage() {
   const form = document.getElementById("contact-form");
+  const submitBtn = form.querySelector(".submit-btn");
   const successMessage = document.createElement("div");
   successMessage.className = "success-message";
   successMessage.id = "success-notification";
-  successMessage.textContent = "Thank you! We will contact you soon.";
+  successMessage.textContent =
+    "Message sent successfully! We'll get back to you within 24 hours.";
+  successMessage.style.marginTop = "10px";
 
-  // Insert before the form
-  form.parentNode.insertBefore(successMessage, form);
-
-  // Scroll to the success message
-  successMessage.scrollIntoView({ behavior: "smooth", block: "center" });
+  // Insert after the submit button
+  submitBtn.parentNode.insertBefore(successMessage, submitBtn.nextSibling);
 
   // Remove message after 5 seconds
   setTimeout(() => {
@@ -230,17 +230,16 @@ function showSuccessMessage() {
 
 function showErrorMessage(message) {
   const form = document.getElementById("contact-form");
+  const submitBtn = form.querySelector(".submit-btn");
   const errorMessage = document.createElement("div");
   errorMessage.className = "success-message";
   errorMessage.id = "error-notification";
   errorMessage.style.background = "linear-gradient(135deg, #e74c3c, #c0392b)";
+  errorMessage.style.marginTop = "10px";
   errorMessage.textContent = message;
 
-  // Insert before the form
-  form.parentNode.insertBefore(errorMessage, form);
-
-  // Scroll to the error message
-  errorMessage.scrollIntoView({ behavior: "smooth", block: "center" });
+  // Insert after the submit button
+  submitBtn.parentNode.insertBefore(errorMessage, submitBtn.nextSibling);
 
   // Remove message after 5 seconds
   setTimeout(() => {

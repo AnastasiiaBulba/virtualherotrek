@@ -118,6 +118,10 @@
   .mobile-menu-toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
   }
+
+  .logo {
+    font-size: 1.2rem;
+  }
 }
 
 /* Body scroll lock styles */

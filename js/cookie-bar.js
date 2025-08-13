@@ -4,6 +4,7 @@ class CookieBar {
   constructor() {
     this.cookieBar = document.getElementById("cookie-bar");
     this.acceptBtn = document.getElementById("accept-cookies");
+    this.customizeBtn = document.getElementById("customize-cookies");
     this.init();
   }
 
@@ -18,6 +19,13 @@ class CookieBar {
       this.acceptBtn.addEventListener("click", () => {
         this.acceptCookies();
       });
+
+      // Add event listener to customize button
+      if (this.customizeBtn) {
+        this.customizeBtn.addEventListener("click", () => {
+          this.openCookieSettings();
+        });
+      }
     }
   }
 
@@ -54,12 +62,17 @@ class CookieBar {
     this.showAcceptanceMessage();
   }
 
+  openCookieSettings() {
+    // Open cookie settings page in the same tab
+    window.location.href = "prin-cookies.html";
+  }
+
   showAcceptanceMessage() {
     // Create a temporary notification
     const notification = document.createElement("div");
     notification.style.cssText = `
             position: fixed;
-            top: 20px;
+            bottom: 20px;
             right: 20px;
             background: var(--gradient-primary);
             color: white;
@@ -71,7 +84,8 @@ class CookieBar {
             transition: transform 0.3s ease;
             font-weight: 500;
         `;
-    notification.textContent = "Thank you! Cookies accepted.";
+    notification.textContent =
+      "Cookies successfully enabled! Enjoy your gaming experience.";
 
     document.body.appendChild(notification);
 

@@ -314,6 +314,63 @@ class PageBuilder {
     if (playBtn && playOverlay && gameIframe) {
       console.log("Game play button initialized successfully");
 
+      // Track if sound was enabled by user
+      let soundEnabledByUser = false;
+
+      // Function to reset game state
+      const resetGameState = () => {
+        gameIframe.setAttribute("muted", "");
+        playOverlay.classList.remove("hidden");
+        soundEnabledByUser = false;
+        console.log("Game state reset - muted and overlay shown");
+      };
+
+      // Always ensure game is muted on page load/refresh
+      resetGameState();
+
+      // Handle page show event (when returning from external links)
+      document.addEventListener("pageshow", function (event) {
+        // Check if page is loaded from cache (back/forward navigation)
+        if (event.persisted) {
+          console.log("Page loaded from cache, resetting game state");
+          resetGameState();
+        }
+      });
+
+      // Handle page focus event (when returning to tab)
+      window.addEventListener("focus", function () {
+        // Reset game state when returning to the page
+        console.log("Window focused, resetting game state");
+        resetGameState();
+      });
+
+      // Handle page visibility change to mute sound when page is hidden
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden && soundEnabledByUser) {
+          // Page is hidden, mute the game
+          gameIframe.setAttribute("muted", "");
+          console.log("Game muted due to page visibility change");
+        } else if (!document.hidden && soundEnabledByUser) {
+          // Page is visible again, unmute if user had enabled sound
+          gameIframe.removeAttribute("muted");
+          console.log("Game unmuted after page becomes visible");
+        }
+      });
+
+      // Handle window blur/focus to mute sound when switching tabs
+      window.addEventListener("blur", function () {
+        if (soundEnabledByUser) {
+          gameIframe.setAttribute("muted", "");
+          console.log("Game muted due to window blur");
+        }
+      });
+
+      // Handle page unload to ensure game is muted
+      window.addEventListener("beforeunload", function () {
+        gameIframe.setAttribute("muted", "");
+        console.log("Game muted before page unload");
+      });
+
       playBtn.addEventListener("click", function () {
         console.log("Play button clicked!");
 
@@ -322,6 +379,7 @@ class PageBuilder {
 
         // Remove muted attribute to enable sound
         gameIframe.removeAttribute("muted");
+        soundEnabledByUser = true;
 
         // Focus on the iframe for better user experience
         gameIframe.focus();
@@ -342,13 +400,13 @@ class PageBuilder {
             <header class="header">
                 <div class="container">
                     <div class="header-content">
-                        <a href="index.html" class="logo">
+                        <a href="./" class="logo">
                             <img src="pict/princess512.jpg" alt="Princess Run 3D Logo">
                             <span>Princess Run 3D</span>
                         </a>
                         <nav>
                             <ul class="nav-menu">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="./">Home</a></li>
                                 <li><a href="prin-new.html">News</a></li>
                                 <li><a href="prin-contacts.html">Contacts</a></li>
                                 <li><a href="prin-privacy.html">Privacy</a></li>
@@ -521,7 +579,7 @@ class PageBuilder {
                         <div class="footer-section">
                             <h3>Quick Links</h3>
                             <ul class="footer-links">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="./">Home</a></li>
                                 <li><a href="prin-new.html">News</a></li>
                                 <li><a href="prin-contacts.html">Contacts</a></li>
                                 <li><a href="prin-privacy.html">Privacy Policy</a></li>
