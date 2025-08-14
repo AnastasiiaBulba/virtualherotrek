@@ -4,7 +4,6 @@ class CookieBar {
   constructor() {
     this.cookieBar = document.getElementById("cookie-bar");
     this.acceptBtn = document.getElementById("accept-cookies");
-    this.customizeBtn = document.getElementById("customize-cookies");
     this.init();
   }
 
@@ -19,13 +18,6 @@ class CookieBar {
       this.acceptBtn.addEventListener("click", () => {
         this.acceptCookies();
       });
-
-      // Add event listener to customize button
-      if (this.customizeBtn) {
-        this.customizeBtn.addEventListener("click", () => {
-          this.openCookieSettings();
-        });
-      }
     }
   }
 
@@ -60,11 +52,6 @@ class CookieBar {
 
     // Show confirmation message
     this.showAcceptanceMessage();
-  }
-
-  openCookieSettings() {
-    // Open cookie settings page in the same tab
-    window.location.href = "prin-cookies.html";
   }
 
   showAcceptanceMessage() {
